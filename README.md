@@ -27,7 +27,14 @@
 ![create_unit](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/21b3ca64-4c21-488b-a0bd-d197cc064e99)
 -Содержание service unit
 ![unit](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/2094bbf5-a33b-4c74-b1ae-3ab5ca187826)
-
+#Осуществим запуск скрипта и добавим его в автозагрузку.
+- systemctl start запускаем сервис
+- systemctl enable добавляем в автозагрузку
+- ![systemctl](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/d6c748fe-a1a8-448b-b82d-786a54649ffb)
+# Настраиваем openvpn на клиенте:
+-Создаем конфигурационный файл клиента server.conf
+![client_vpn](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/5c75aaec-dd24-4d4a-a8bd-4dd3889ff8bd)
+![client_conf](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/6af9a5d8-a56b-4dc3-95de-11737dae40b8)
 
 
 
