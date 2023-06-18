@@ -35,7 +35,16 @@
 -Создаем конфигурационный файл клиента server.conf
 ![client_vpn](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/5c75aaec-dd24-4d4a-a8bd-4dd3889ff8bd)
 ![client_conf](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/6af9a5d8-a56b-4dc3-95de-11737dae40b8)
+На сервер клиента в директорию /etc/openvpn необходимо скопировать файл-ключ static.key, который был создан на сервере.
+![image](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/8b4b9bce-2109-435e-ba8f-4301ad021d8c)
+Замеряем скорость в туннеле.
+● на openvpn сервере запускаем iperf3 в режиме сервера
+iperf3 -s &
+![image](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/06b61700-4534-4d87-bcb7-6db0154a8f52)
 
-
+● на openvpn клиенте запускаем iperf3 в режиме клиента и замеряем
+скорость в туннеле
+iperf3 -c 10.10.10.1 -t 40 -i 5
+![image](https://github.com/AlexanderSerg-jun/vpn/assets/85576634/8d2f3be7-6f02-4cc5-9ac3-aaf7261c0005)
 
 
